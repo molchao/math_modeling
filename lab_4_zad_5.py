@@ -1,9 +1,11 @@
 import numpy as np
 
-a = input("Введите фигуру: ")
-if a == "круг":
-    r = int(input("Введите радиус"))
-    def ploshad_kruga(r):
-        S = np.pi * r^2
-        print(S)
-    ploshad_kruga(r)
+def ploshad_kruga(fig, a, r, h, b):
+    if a == "круг":       
+        S = np.pi *(r**2)
+    elif a == "прямоугольник":
+        S = a*b
+    elif a == "треугольник":
+        S = 0.5*a*h
+        
+        
